@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaokit — AI 内容与算力基础设施</title>
+  <meta name="description"
+    content="Zaokit 是一家 AI 原生公司，构建从内容创作到算力供给的完整产品矩阵：AI 内容创作平台、企业 AI 算力总闸 AI Token Hub，以及合规可开票的 Claude / OpenAI API 接入服务。">
+  <meta name="keywords" content="Zaokit, AI 内容创作, AI 算力, Token Hub, Claude API, OpenAI API, 企业级 AI, 大模型基础设施">
+  <meta name="author" content="Zaokit AI">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="Zaokit">
+  <meta property="og:title" content="Zaokit — AI 内容与算力基础设施">
+  <meta property="og:description" content="一家 AI 原生公司，构建从内容创作到算力供给的完整产品矩阵。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+
+  <!-- 背景氛围光 -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora-blob aurora-1"></span>
+    <span class="aurora-blob aurora-2"></span>
+    <span class="aurora-blob aurora-3"></span>
+    <span class="grid-veil"></span>
+  </div>
+
+  <!-- 导航 -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Zaokit 主页">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8B5CF6" />
+                <stop offset="0.5" stop-color="#7C3AED" />
+                <stop offset="1" stop-color="#6366F1" />
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="28" height="28" rx="9" fill="url(#lg)" />
+            <path d="M10 11h12l-9 10h9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="24.5" cy="8" r="2.2" fill="#FCD34D" />
+          </svg>
+        </span>
+        <span class="brand-text">Zaokit</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="主导航">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#products" data-i18n="nav.products">产品</a></li>
+          <li><a href="#capabilities" data-i18n="nav.capabilities">能力</a></li>
+          <li><a href="#about" data-i18n="nav.about">关于</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
+          <li><button id="lang-switch" class="lang-switch" type="button">EN</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow reveal" data-i18n="hero.eyebrow">AI 原生 · 内容与算力基础设施</span>
+        <h1 class="hero-title reveal">
+          <span data-i18n="hero.title1">把一个想法</span><br>
+          <span class="shimmer" data-i18n="hero.title2">变成生产力</span>
+        </h1>
+        <p class="hero-sub reveal" data-i18n="hero.sub">
+          Zaokit 构建从内容创作到算力供给的完整产品矩阵——让创意一句话成形，让企业把 AI 算力当水电一样调度，让合规接入大模型不再有门槛。
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#products" data-i18n="hero.cta1">探索产品矩阵</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">联系我们 →</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><b data-i18n="hero.stat1n">4</b><span data-i18n="hero.stat1l">条产品线</span></div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat"><b data-i18n="hero.stat2n">企业级</b><span data-i18n="hero.stat2l">高可用 · 可开票</span></div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat"><b data-i18n="hero.stat3n">私有化</b><span data-i18n="hero.stat3l">可独立部署</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker" data-i18n="products.kicker">产品矩阵</span>
+          <h2 class="section-title" data-i18n="products.title">一个公司，四个支点</h2>
+          <p class="section-desc" data-i18n="products.desc">从面向创作者的内容工厂，到面向企业的算力中枢与合规接入，覆盖 AI 落地的关键环节。</p>
+        </header>
+
+        <div class="product-grid">
+          <a class="product-card reveal" data-accent="violet" href="https://zaokit.app" target="_blank" rel="noopener">
+            <div class="pc-glow" aria-hidden="true"></div>
+            <div class="pc-top">
+              <span class="pc-icon" aria-hidden="true">✦</span>
+              <span class="pc-tag" data-i18n="products.p1.tag">内容创作</span>
+            </div>
+            <h3 class="pc-name" data-i18n="products.p1.name">Zaokit 创作平台</h3>
+            <p class="pc-desc" data-i18n="products.p1.desc">一句话生成小红书图文、PPT 演示与漫画故事。AI 内容工厂，输入文字，输出视觉。</p>
+            <span class="pc-link"><span data-i18n="products.p1.link">zaokit.app</span> <i>→</i></span>
+          </a>
+
+          <a class="product-card reveal" data-accent="indigo" href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener">
+            <div class="pc-glow" aria-hidden="true"></div>
+            <div class="pc-top">
+              <span class="pc-icon" aria-hidden="true">⊞</span>
+              <span class="pc-tag" data-i18n="products.p2.tag">企业算力</span>
+            </div>
+            <h3 class="pc-name" data-i18n="products.p2.name">AI Token Hub</h3>
+            <p class="pc-desc" data-i18n="products.p2.desc">企业 AI 算力的总闸与电表。把算力当水电一样统一计量、统一分配，号池优先、API 兜底。</p>
+            <span class="pc-link"><span data-i18n="products.p2.link">tokenhub.zaokit.ai</span> <i>→</i></span>
+          </a>
+
+          <a class="product-card reveal" data-accent="amber" href="https://cc.zaokit.com" target="_blank" rel="noopener">
+            <div class="pc-glow" aria-hidden="true"></div>
+            <div class="pc-top">
+              <span class="pc-icon" aria-hidden="true">◆</span>
+              <span class="pc-tag" data-i18n="products.p3.tag">合规接入</span>
+            </div>
+            <h3 class="pc-name" data-i18n="products.p3.name">Claude API 服务</h3>
+            <p class="pc-desc" data-i18n="products.p3.desc">正规商业渠道接入 Claude，企业级高并发高可用，支持对公结算与增值税专票。</p>
+            <span class="pc-link"><span data-i18n="products.p3.link">cc.zaokit.com</span> <i>→</i></span>
+          </a>
+
+          <a class="product-card reveal" data-accent="emerald" href="https://cx.zaokit.com" target="_blank" rel="noopener">
+            <div class="pc-glow" aria-hidden="true"></div>
+            <div class="pc-top">
+              <span class="pc-icon" aria-hidden="true">❖</span>
+              <span class="pc-tag" data-i18n="products.p4.tag">合规接入</span>
+            </div>
+            <h3 class="pc-name" data-i18n="products.p4.name">Codex API 服务</h3>
+            <p class="pc-desc" data-i18n="products.p4.desc">正规商业渠道接入 OpenAI，含网络加速与合规结算，让企业稳定调用前沿模型。</p>
+            <span class="pc-link"><span data-i18n="products.p4.link">cx.zaokit.com</span> <i>→</i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker" data-i18n="cap.kicker">为什么选择 Zaokit</span>
+          <h2 class="section-title" data-i18n="cap.title">把前沿能力，变成可交付的确定性</h2>
+        </header>
+
+        <div class="cap-grid">
+          <div class="cap-item reveal">
+            <span class="cap-num">01</span>
+            <h3 data-i18n="cap.c1.t">AI 原生</h3>
+            <p data-i18n="cap.c1.d">从产品到工程链路都以大模型为核心构建，而非简单套壳。Agent 驱动的生成引擎贯穿每条产品线。</p>
+          </div>
+          <div class="cap-item reveal">
+            <span class="cap-num">02</span>
+            <h3 data-i18n="cap.c2.t">企业级可靠</h3>
+            <p data-i18n="cap.c2.d">高并发、高可用架构，多 Key 轮询与自动容灾，蓝绿部署。为生产环境而生。</p>
+          </div>
+          <div class="cap-item reveal">
+            <span class="cap-num">03</span>
+            <h3 data-i18n="cap.c3.t">合规与开票</h3>
+            <p data-i18n="cap.c3.d">正规商业渠道，支持对公结算与增值税专票，彻底解决企业接入与报销的合规痛点。</p>
+          </div>
+          <div class="cap-item reveal">
+            <span class="cap-num">04</span>
+            <h3 data-i18n="cap.c4.t">私有化部署</h3>
+            <p data-i18n="cap.c4.d">关键能力支持私有化与独立部署，数据自主可控，满足企业安全与合规要求。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-text reveal">
+          <span class="section-kicker" data-i18n="about.kicker">关于 Zaokit</span>
+          <h2 class="section-title" data-i18n="about.title">造Kit —— 为 AI 时代造工具</h2>
+          <p data-i18n="about.p1">Zaokit 相信，AI 的价值不在于演示，而在于稳定地交付结果。我们把复杂的模型能力收敛成可靠、好用、合规的产品，让个人创作者与企业团队都能即取即用。</p>
+          <p data-i18n="about.p2">从一张图、一份演示，到一整套企业算力调度与合规接入——我们在内容与算力两端同时发力，做 AI 落地的基础设施。</p>
+        </div>
+        <div class="about-quote reveal">
+          <blockquote data-i18n="about.quote">"输入文字，输出生产力。"</blockquote>
+          <span class="quote-by" data-i18n="about.quoteby">— Zaokit 的产品信条</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <h2 data-i18n="contact.title">让我们聊聊你的 AI 需求</h2>
+          <p data-i18n="contact.desc">无论是内容创作、企业算力调度，还是合规接入大模型，我们都能提供专业方案。</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:support@zaokit.com" data-i18n="contact.btn">support@zaokit.com</a>
+            <a class="btn btn-ghost" href="https://zaokit.app" target="_blank" rel="noopener" data-i18n="contact.btn2">体验创作平台 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Zaokit 主页">
+          <span class="brand-logo" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24">
+              <rect x="2" y="2" width="28" height="28" rx="9" fill="url(#lg)" />
+              <path d="M10 11h12l-9 10h9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="24.5" cy="8" r="2.2" fill="#FCD34D" />
+            </svg>
+          </span>
+          <span class="brand-text">Zaokit</span>
+        </a>
+        <p class="footer-tag" data-i18n="footer.tag">AI 内容与算力基础设施</p>
+      </div>
+
+      <nav class="footer-cols" aria-label="页脚导航">
+        <div class="footer-col">
+          <h4 data-i18n="footer.products">产品</h4>
+          <a href="https://zaokit.app" target="_blank" rel="noopener">Zaokit 创作平台</a>
+          <a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener">AI Token Hub</a>
+          <a href="https://cc.zaokit.com" target="_blank" rel="noopener">Claude API 服务</a>
+          <a href="https://cx.zaokit.com" target="_blank" rel="noopener">Codex API 服务</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">公司</h4>
+          <a href="#about" data-i18n="footer.about">关于我们</a>
+          <a href="#capabilities" data-i18n="footer.cap">核心能力</a>
+          <a href="https://zaokit.app/changelog" target="_blank" rel="noopener" data-i18n="footer.changelog">更新日志</a>
+          <a href="https://zaokit.app/privacy" target="_blank" rel="noopener" data-i18n="footer.privacy">隐私政策</a>
+          <a href="https://zaokit.app/terms" target="_blank" rel="noopener" data-i18n="footer.terms">使用条款</a>
+          <a href="mailto:support@zaokit.com" data-i18n="footer.contact">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.social">社交媒体</h4>
+          <a href="https://discord.gg/HDjD6g5mdw" target="_blank" rel="noopener" data-i18n="footer.discord">Discord</a>
+          <a href="https://x.com/Zaokit_AI_Agent" target="_blank" rel="noopener" data-i18n="footer.twitter">X (Twitter)</a>
+          <a href="https://www.youtube.com/@zaokitai" target="_blank" rel="noopener" data-i18n="footer.youtube">YouTube</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Zaokit AI. <span data-i18n="footer.rights">保留所有权利。</span></span>
+    </div>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
