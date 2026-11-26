@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zaokit — 让 AI 真正开始干活</title>
   <meta name="description"
-    content="Zaokit 提供 AI 内容创作、Claude 与 OpenAI API 接入、企业 AI 用量管理、Claude 工作环境托管和大模型私有化部署，以及面向企业的安全、运维与网络解决方案。">
-  <meta name="keywords" content="Zaokit, AI 内容创作, Claude API, OpenAI API, AI Token Hub, Claude 工作环境托管, 私有化部署, 企业 AI">
+    content="Zaokit 提供 AI 内容创作、Claude 与 OpenAI API 接入、企业 AI 用量管理、Zaokit ClaudeOps 托管和私有化算力部署和调优，以及面向企业的安全、运维与网络解决方案。">
+  <meta name="keywords" content="Zaokit, AI 内容创作, Claude API, OpenAI API, AI Token Hub, Zaokit ClaudeOps 托管, 私有化算力部署和调优, 企业 AI">
   <meta name="author" content="Zaokit">
 
   <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./favicon.svg">
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css?v=20261126">
 
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="35151636-5e76-4a3c-b933-ab2d6db088ba"></script>
@@ -39,6 +39,44 @@
         <stop offset="0.5" stop-color="#7C3AED" />
         <stop offset="1" stop-color="#6366F1" />
       </linearGradient>
+      <symbol id="ic-create" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96l-6.14 1.58a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z" />
+        <path d="M20 3v4M22 5h-4M4 17v2M5 18H3" />
+      </symbol>
+      <symbol id="ic-access" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+        <polyline points="2 12 12 17 22 12" />
+        <polyline points="2 17 12 22 22 17" />
+      </symbol>
+      <symbol id="ic-host" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="8" rx="2.2" />
+        <rect x="2" y="13" width="20" height="8" rx="2.2" />
+        <circle cx="6.5" cy="7" r="1" fill="currentColor" stroke="none" />
+        <circle cx="6.5" cy="17" r="1" fill="currentColor" stroke="none" />
+        <line x1="11" y1="7" x2="17.5" y2="7" />
+        <line x1="11" y1="17" x2="17.5" y2="17" />
+      </symbol>
+      <symbol id="ic-ent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="ic-more" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7.5" height="7.5" rx="2" />
+        <rect x="13.5" y="3" width="7.5" height="7.5" rx="2" />
+        <rect x="3" y="13.5" width="7.5" height="7.5" rx="2" />
+        <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2" />
+      </symbol>
+      <symbol id="ic-reliable" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </symbol>
+      <symbol id="ic-invoice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z" />
+        <path d="M8 7h8M8 11h8M8 15h5" />
+      </symbol>
+      <symbol id="ic-privacy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2.2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </symbol>
     </defs>
   </svg>
 
@@ -87,37 +125,43 @@
       <!-- Category strip (Apple-style product nav) -->
       <div class="wrap">
         <ul class="catnav reveal">
-          <li><a href="#cat-create"><span class="cn-ic ic-purple">✦</span><span data-i18n="cat.create">创作与沟通</span></a></li>
-          <li><a href="#cat-access"><span class="cn-ic ic-orange">◆</span><span data-i18n="cat.access">模型接入与管理</span></a></li>
-          <li><a href="#cat-host"><span class="cn-ic ic-blue">▣</span><span data-i18n="cat.host">托管与部署</span></a></li>
-          <li><a href="#cat-ent"><span class="cn-ic ic-green">◎</span><span data-i18n="cat.ent">企业方案</span></a></li>
-          <li><a href="#cat-more"><span class="cn-ic ic-pink">❖</span><span data-i18n="cat.more">更多服务</span></a></li>
+          <li><a href="#cat-create"><span class="cn-ic ic-purple" aria-hidden="true"><svg><use href="#ic-create" /></svg></span><span data-i18n="cat.create">创作与沟通</span></a></li>
+          <li><a href="#cat-access"><span class="cn-ic ic-orange" aria-hidden="true"><svg><use href="#ic-access" /></svg></span><span data-i18n="cat.access">模型接入与管理</span></a></li>
+          <li><a href="#cat-host"><span class="cn-ic ic-blue" aria-hidden="true"><svg><use href="#ic-host" /></svg></span><span data-i18n="cat.host">托管与部署</span></a></li>
+          <li><a href="#cat-ent"><span class="cn-ic ic-green" aria-hidden="true"><svg><use href="#ic-ent" /></svg></span><span data-i18n="cat.ent">企业方案</span></a></li>
+          <li><a href="#cat-more"><span class="cn-ic ic-pink" aria-hidden="true"><svg><use href="#ic-more" /></svg></span><span data-i18n="cat.more">更多服务</span></a></li>
         </ul>
       </div>
 
       <!-- Figma-style canvas -->
       <div class="wrap">
-        <div class="canvas reveal" aria-hidden="true">
-          <div class="canvas-bar">
+        <div class="canvas reveal">
+          <div class="canvas-bar" aria-hidden="true">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="canvas-title">Untitled — Zaokit</span>
+            <span class="canvas-title">Untitled — Zaokit Studio</span>
           </div>
           <div class="canvas-board">
             <div class="frame frame-prompt">
               <span class="frame-label">Prompt</span>
-              <p data-i18n="canvas.prompt">“把这篇新品介绍做成小红书图文，配三张图。”</p>
+              <p data-i18n="canvas.prompt">“把这篇 AI 工程文章做成小红书图文，配三张图。”</p>
             </div>
-            <svg class="flow" viewBox="0 0 120 40" preserveAspectRatio="none"><path d="M2 20 C 40 20, 80 20, 112 20" /><path d="M104 12 L114 20 L104 28" /></svg>
+            <svg class="flow" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><path d="M2 20 C 40 20, 80 20, 112 20" /><path d="M104 12 L114 20 L104 28" /></svg>
             <div class="frame frame-out">
-              <span class="frame-label">Output</span>
+              <span class="frame-label">Output · 3 Cards</span>
               <div class="out-grid">
-                <div class="out-card c1"><i></i><b></b><b class="s"></b></div>
-                <div class="out-card c2"><i></i><b></b><b class="s"></b></div>
-                <div class="out-card c3"><i></i><b></b><b class="s"></b></div>
+                <figure class="out-card">
+                  <img src="./assets/showcase/xhs-1.webp" alt="Zaokit 生成的 AI 工程体系小红书封面" loading="eager">
+                </figure>
+                <figure class="out-card">
+                  <img src="./assets/showcase/xhs-2.webp" alt="Zaokit 生成的 Agent 升级架构图" loading="eager">
+                </figure>
+                <figure class="out-card">
+                  <img src="./assets/showcase/xhs-3.webp" alt="Zaokit 生成的 3 个 Agent 交付闭环图" loading="eager">
+                </figure>
               </div>
             </div>
-            <div class="cursor cur-a"><svg viewBox="0 0 16 16"><path d="M1 1l5 14 2-6 6-2z" /></svg><span data-i18n="canvas.c1">你</span></div>
-            <div class="cursor cur-b"><svg viewBox="0 0 16 16"><path d="M1 1l5 14 2-6 6-2z" /></svg><span>Zaokit</span></div>
+            <div class="cursor cur-a" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 1l5 14 2-6 6-2z" /></svg><span data-i18n="canvas.c1">你</span></div>
+            <div class="cursor cur-b" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M1 1l5 14 2-6 6-2z" /></svg><span>Zaokit</span></div>
           </div>
         </div>
       </div>
@@ -143,10 +187,16 @@
                 <a class="link-arrow light" href="https://zaokit.app/changelog" target="_blank" rel="noopener" data-i18n="studio.more">查看更新</a>
               </div>
             </div>
-            <div class="tile-art studio-art" aria-hidden="true">
-              <div class="sa sa-post"><i></i><b></b><b class="s"></b></div>
-              <div class="sa sa-slide"><b></b><b class="s"></b><span></span></div>
-              <div class="sa sa-comic"><i></i><i></i><i></i><i></i></div>
+            <div class="tile-art studio-art">
+              <div class="sa sa-post">
+                <img src="./assets/showcase/xhs-2.webp" alt="Zaokit 创作平台生成的小红书图文" loading="lazy">
+              </div>
+              <div class="sa sa-slide">
+                <img src="./assets/showcase/slide-1.jpg" alt="Zaokit 创作平台生成的 PPT 演示文稿" loading="lazy">
+              </div>
+              <div class="sa sa-comic">
+                <img src="./assets/showcase/comic-1.webp" alt="Zaokit 创作平台生成的 AI 漫画故事" loading="lazy">
+              </div>
             </div>
           </article>
 
@@ -157,26 +207,72 @@
               <h3 class="tile-title" data-i18n="cc.title">稳定接入 Claude API。</h3>
               <p class="tile-desc" data-i18n="cc.desc">兼容 Anthropic 官方 API 格式，多线路路由与自动故障转移，支持企业合同和正式发票。</p>
               <div class="tile-links">
-                <a class="link-arrow" href="https://cc.zaokit.com" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
+                <a class="link-arrow" href="https://api.zaokit.com" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
               </div>
             </div>
-            <pre class="tile-art code-art" aria-hidden="true"><span class="c-k">curl</span> https://cc.zaokit.com/v1/messages \
-  -H <span class="c-s">"x-api-key: $KEY"</span> \
-  -d <span class="c-s">'{"model": "claude-…"}'</span></pre>
+            <div class="tile-art api-card api-claude" aria-hidden="true">
+              <div class="api-head">
+                <span class="api-status"><i class="pulse-dot"></i><span data-i18n="cc.ui.status">多线路高可用</span></span>
+                <span class="api-badge">Anthropic API</span>
+              </div>
+              <div class="api-route">
+                <div class="api-node">
+                  <span class="an-title" data-i18n="cc.ui.app">你的应用</span>
+                  <span class="an-sub">SDK / HTTP</span>
+                </div>
+                <div class="api-pipe">
+                  <span class="pipe-label" data-i18n="cc.ui.route">智能路由 · 自动容灾</span>
+                  <svg viewBox="0 0 120 24" preserveAspectRatio="none">
+                    <path class="pipe-bg" d="M4 12 H116" />
+                    <path class="pipe-flow" d="M4 12 H116" />
+                  </svg>
+                </div>
+                <div class="api-node an-target">
+                  <span class="an-title">Claude</span>
+                  <span class="an-ok">200 OK</span>
+                </div>
+              </div>
+              <div class="api-chips">
+                <span>Claude Opus</span>
+                <span>Claude Sonnet</span>
+                <span>Claude Haiku</span>
+              </div>
+              <div class="api-endpoint">
+                <span class="ep-k">BASE_URL</span>
+                <code>https://api.zaokit.com/v1</code>
+              </div>
+            </div>
           </article>
 
           <!-- Codex API -->
           <article class="tile tile-codex reveal">
             <div class="tile-copy">
               <p class="tile-kicker" data-i18n="cx.name">Zaokit Codex API 服务</p>
-              <h3 class="tile-title" data-i18n="cx.title">稳定接入 OpenAI 模型，可开专票。</h3>
-              <p class="tile-desc" data-i18n="cx.desc">支持 OpenAI 与 Codex API 接入，兼容官方接口协议，专线优化，支持对公结算和增值税专用发票。</p>
+              <h3 class="tile-title" data-i18n="cx.title">稳定接入 OpenAI 模型。</h3>
+              <p class="tile-desc" data-i18n="cx.desc">支持 OpenAI 与 Codex API 接入，兼容官方接口协议，专线优化，支持对公结算。</p>
               <div class="tile-links">
                 <a class="link-arrow" href="https://cx.zaokit.com" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
               </div>
             </div>
-            <pre class="tile-art code-art" aria-hidden="true"><span class="c-k">export</span> OPENAI_BASE_URL=<span class="c-s">https://cx.zaokit.com/v1</span>
-<span class="c-k">codex</span> <span class="c-s">"fix this bug"</span></pre>
+            <div class="tile-art api-card api-codex" aria-hidden="true">
+              <div class="term-bar">
+                <span class="t-dots"><i></i><i></i><i></i></span>
+                <span class="t-title">Codex CLI · OpenAI API</span>
+                <span class="t-badge" data-i18n="cx.ui.badge">专线优化</span>
+              </div>
+              <div class="term-body">
+                <div class="t-line"><span class="t-p">$</span> <span class="t-k">export</span> OPENAI_BASE_URL=<span class="t-s">https://cx.zaokit.com/v1</span></div>
+                <div class="t-line"><span class="t-p">$</span> <span class="t-k">codex</span> <span class="t-s" data-i18n="cx.ui.cmd">"优化接口并发并补齐测试"</span></div>
+                <div class="t-line t-ok"><span>✓</span> <span data-i18n="cx.ui.ok1">已接入专线通道 · 兼容官方协议</span></div>
+                <div class="t-line t-ok"><span>✓</span> <span data-i18n="cx.ui.ok2">4 个文件已更新 · 测试全部通过</span></div>
+              </div>
+              <div class="api-chips dark">
+                <span>GPT-5</span>
+                <span>Codex</span>
+                <span>o3</span>
+                <span data-i18n="cx.ui.bill">对公结算</span>
+              </div>
+            </div>
           </article>
 
           <!-- Token Hub -->
@@ -189,44 +285,200 @@
                 <a class="link-arrow" href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
               </div>
             </div>
-            <div class="tile-art hub-art" aria-hidden="true">
-              <div class="meter"><span data-i18n="hub.m1">设计部</span><i style="--w:72%"></i></div>
-              <div class="meter"><span data-i18n="hub.m2">研发部</span><i style="--w:88%"></i></div>
-              <div class="meter"><span data-i18n="hub.m3">市场部</span><i style="--w:41%"></i></div>
+            <div class="tile-art hub-panel" aria-hidden="true">
+              <div class="hub-kpi">
+                <div>
+                  <span class="kpi-l" data-i18n="hub.ui.total">本月统一计量</span>
+                  <strong class="kpi-v">48.2M <em>Tokens</em></strong>
+                </div>
+                <span class="kpi-pill" data-i18n="hub.ui.bill">一张账单</span>
+              </div>
+              <div class="hub-models">
+                <span><i class="dot-o"></i>Claude</span>
+                <span><i class="dot-g"></i>OpenAI</span>
+                <span><i class="dot-b"></i>Gemini</span>
+                <span><i class="dot-p"></i>DeepSeek</span>
+              </div>
+              <div class="hub-meters">
+                <div class="meter">
+                  <div class="m-row"><span data-i18n="hub.m2">研发部</span><b>62%</b></div>
+                  <i style="--w:62%"></i>
+                </div>
+                <div class="meter">
+                  <div class="m-row"><span data-i18n="hub.m1">设计部</span><b>24%</b></div>
+                  <i style="--w:24%"></i>
+                </div>
+                <div class="meter">
+                  <div class="m-row"><span data-i18n="hub.m3">市场部</span><b>14%</b></div>
+                  <i style="--w:14%"></i>
+                </div>
+              </div>
             </div>
           </article>
 
           <!-- Managed Workspace -->
           <article class="tile tile-ops reveal">
             <div class="tile-copy">
-              <p class="tile-kicker" data-i18n="ops.name">Zaokit 工作环境托管</p>
+              <p class="tile-kicker" data-i18n="ops.name">Zaokit ClaudeOps 托管</p>
               <h3 class="tile-title" data-i18n="ops.title">你的 Claude 工作环境，交给我们托管。</h3>
               <p class="tile-desc" data-i18n="ops.desc">在 9 个国家的本地网络中提供隔离的 Mac Studio / Mac mini 环境，并配有一对一工程顾问。</p>
               <div class="tile-links">
-                <a class="link-arrow" href="https://junxinzhang.com/projects/claude-ops/" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
+                <a class="link-arrow" href="https://claudeops.zaokit.ai" target="_blank" rel="noopener" data-i18n="common.learn">了解更多</a>
               </div>
             </div>
-            <div class="tile-art ops-art" aria-hidden="true">
-              <div class="mac"><span></span></div>
-              <div class="regions"><i>AU</i><i>US</i><i>SG</i><i>MY</i><i>ID</i><i>JP</i><i>KH</i><i>NZ</i><i>CA</i></div>
+            <div class="tile-art ops-panel" aria-hidden="true">
+              <div class="ops-head">
+                <span class="api-status"><i class="pulse-dot"></i><span data-i18n="ops.ui.iso">独立物理隔离</span></span>
+                <span class="ops-tag" data-i18n="ops.ui.eng">1v1 工程顾问</span>
+              </div>
+              <div class="ops-hw">
+                <svg class="mac-svg" viewBox="0 0 220 82" fill="none">
+                  <defs>
+                    <linearGradient id="macBody" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#f7f7f9" />
+                      <stop offset="55%" stop-color="#e4e4e9" />
+                      <stop offset="100%" stop-color="#cfd0d8" />
+                    </linearGradient>
+                    <linearGradient id="macBase" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#2c2c30" />
+                      <stop offset="50%" stop-color="#48484e" />
+                      <stop offset="100%" stop-color="#2c2c30" />
+                    </linearGradient>
+                  </defs>
+                  <ellipse cx="110" cy="74" rx="82" ry="7" fill="rgba(4,120,87,0.14)" />
+                  <rect x="44" y="64" width="132" height="7" rx="3.5" fill="url(#macBase)" />
+                  <rect x="30" y="12" width="160" height="54" rx="14" fill="url(#macBody)" stroke="#fff" stroke-width="1.5" />
+                  <rect x="64" y="42" width="16" height="4" rx="2" fill="#8e8e96" />
+                  <rect x="86" y="42" width="16" height="4" rx="2" fill="#8e8e96" />
+                  <rect x="112" y="41" width="24" height="6" rx="2" fill="#a2a2aa" />
+                  <circle cx="168" cy="44" r="3.2" fill="#0acf83" class="led-pulse" />
+                </svg>
+                <span class="ops-hw-cap">Mac Studio · Mac mini</span>
+              </div>
+              <div class="ops-nodes">
+                <span><i></i>AU</span><span><i></i>US</span><span><i></i>SG</span>
+                <span><i></i>JP</span><span><i></i>CA</span><span><i></i>MY</span>
+                <span><i></i>ID</span><span><i></i>KH</span><span><i></i>NZ</span>
+              </div>
             </div>
           </article>
 
           <!-- Local -->
           <article class="tile tile-wide tile-local reveal">
             <div class="tile-copy">
-              <p class="tile-kicker">Zaokit Local</p>
+              <p class="tile-kicker" data-i18n="local.name">私有化算力部署和调优</p>
               <h3 class="tile-title" data-i18n="local.title">大模型，跑在你自己的机器上。</h3>
               <p class="tile-desc" data-i18n="local.desc">我们把开源大模型部署到你的 Mac、Windows 或 Linux 设备上，提供多机统一网关和 OpenAI 兼容 API，一次性交付。</p>
               <div class="tile-links">
-                <a class="btn btn-dark" href="https://junxinzhang.com/projects/zaokit-local/" target="_blank" rel="noopener" data-i18n="local.cta">查看部署方案</a>
+                <a class="btn btn-dark" href="https://local.zaokit.ai" target="_blank" rel="noopener" data-i18n="local.cta">查看部署方案</a>
               </div>
             </div>
-            <div class="tile-art local-art" aria-hidden="true">
-              <div class="node">Mac</div>
-              <div class="node">Linux</div>
-              <div class="node">Windows</div>
-              <div class="gw">Gateway · /v1</div>
+            <div class="tile-art local-svg-wrap" aria-hidden="true">
+              <svg class="local-svg" viewBox="0 0 560 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="locBorder" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#a259ff" stop-opacity="0.45" />
+                    <stop offset="50%" stop-color="#1abcfe" stop-opacity="0.4" />
+                    <stop offset="100%" stop-color="#0acf83" stop-opacity="0.45" />
+                  </linearGradient>
+                  <linearGradient id="locGw" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#18181b" />
+                    <stop offset="100%" stop-color="#27272f" />
+                  </linearGradient>
+                  <linearGradient id="locBeam1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#a259ff" />
+                    <stop offset="100%" stop-color="#1abcfe" />
+                  </linearGradient>
+                  <linearGradient id="locBeam2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#1abcfe" />
+                    <stop offset="100%" stop-color="#0acf83" />
+                  </linearGradient>
+                  <filter id="glowDot" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="2.5" result="b" />
+                    <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+                  </filter>
+                </defs>
+
+                <!-- Private LAN boundary -->
+                <rect x="8" y="8" width="544" height="314" rx="22" fill="#fafafa" stroke="url(#locBorder)" stroke-width="1.5" stroke-dasharray="6 5" />
+                <g transform="translate(24, 22)">
+                  <rect width="178" height="24" rx="12" fill="#f0fdf4" stroke="#bbf7d0" />
+                  <path d="M13 11V9.5a2.5 2.5 0 0 1 5 0V11M11.5 11h8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" stroke="#059669" stroke-width="1.4" stroke-linecap="round" />
+                  <text x="27" y="16" fill="#047857" font-size="11" font-weight="600" font-family="-apple-system, sans-serif">LOCAL LAN · PRIVATE DATA</text>
+                </g>
+
+                <!-- Flow paths: Devices -> Gateway -->
+                <path id="pMac" d="M104 146 C 104 182, 220 170, 240 202" stroke="#e4e4ec" stroke-width="2.2" />
+                <path id="pLin" d="M280 146 L 280 202" stroke="#e4e4ec" stroke-width="2.2" />
+                <path id="pWin" d="M456 146 C 456 182, 340 170, 320 202" stroke="#e4e4ec" stroke-width="2.2" />
+
+                <path d="M104 146 C 104 182, 220 170, 240 202" stroke="url(#locBeam1)" stroke-width="2.2" stroke-dasharray="6 8" class="svg-flow" />
+                <path d="M280 146 L 280 202" stroke="url(#locBeam2)" stroke-width="2.2" stroke-dasharray="6 8" class="svg-flow" />
+                <path d="M456 146 C 456 182, 340 170, 320 202" stroke="url(#locBeam1)" stroke-width="2.2" stroke-dasharray="6 8" class="svg-flow" />
+
+                <!-- Glowing moving packets -->
+                <circle r="4" fill="#a259ff" filter="url(#glowDot)">
+                  <animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#pMac" /></animateMotion>
+                </circle>
+                <circle r="4" fill="#1abcfe" filter="url(#glowDot)">
+                  <animateMotion dur="2s" begin="0.5s" repeatCount="indefinite"><mpath href="#pLin" /></animateMotion>
+                </circle>
+                <circle r="4" fill="#0acf83" filter="url(#glowDot)">
+                  <animateMotion dur="2.4s" begin="1s" repeatCount="indefinite"><mpath href="#pWin" /></animateMotion>
+                </circle>
+
+                <!-- Node 1: Mac Studio -->
+                <g transform="translate(32, 62)">
+                  <rect width="144" height="84" rx="16" fill="#fff" stroke="#e5e5ea" stroke-width="1.2" />
+                  <rect x="46" y="15" width="52" height="22" rx="6" fill="#ececf0" stroke="#d2d2d7" />
+                  <circle cx="88" cy="26" r="2.2" fill="#0acf83" class="led-pulse" />
+                  <text x="72" y="54" text-anchor="middle" fill="#1d1d1f" font-size="13" font-weight="600" font-family="-apple-system, sans-serif">Mac</text>
+                  <rect x="46" y="61" width="52" height="16" rx="8" fill="#f3e8ff" />
+                  <text x="72" y="72" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="600" font-family="ui-monospace, monospace">MLX</text>
+                </g>
+
+                <!-- Node 2: Linux GPU -->
+                <g transform="translate(208, 62)">
+                  <rect width="144" height="84" rx="16" fill="#fff" stroke="#e5e5ea" stroke-width="1.2" />
+                  <rect x="44" y="13" width="56" height="11" rx="3" fill="#e0f2fe" stroke="#7dd3fc" />
+                  <rect x="44" y="27" width="56" height="11" rx="3" fill="#e0f2fe" stroke="#7dd3fc" />
+                  <circle cx="51" cy="18.5" r="1.8" fill="#0284c7" /><circle cx="51" cy="32.5" r="1.8" fill="#0acf83" class="led-pulse" />
+                  <text x="72" y="54" text-anchor="middle" fill="#1d1d1f" font-size="13" font-weight="600" font-family="-apple-system, sans-serif">Linux GPU</text>
+                  <rect x="46" y="61" width="52" height="16" rx="8" fill="#e0f2fe" />
+                  <text x="72" y="72" text-anchor="middle" fill="#0369a1" font-size="10" font-weight="600" font-family="ui-monospace, monospace">vLLM</text>
+                </g>
+
+                <!-- Node 3: Windows -->
+                <g transform="translate(384, 62)">
+                  <rect width="144" height="84" rx="16" fill="#fff" stroke="#e5e5ea" stroke-width="1.2" />
+                  <rect x="48" y="13" width="48" height="24" rx="4" fill="#ecfdf5" stroke="#6ee7b7" />
+                  <path d="M64 40 H80" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" />
+                  <text x="72" y="54" text-anchor="middle" fill="#1d1d1f" font-size="13" font-weight="600" font-family="-apple-system, sans-serif">Windows</text>
+                  <rect x="42" y="61" width="60" height="16" rx="8" fill="#ecfdf5" />
+                  <text x="72" y="72" text-anchor="middle" fill="#047857" font-size="10" font-weight="600" font-family="ui-monospace, monospace">Ollama</text>
+                </g>
+
+                <!-- Central Unified Gateway -->
+                <g transform="translate(86, 202)">
+                  <rect width="388" height="58" rx="16" fill="url(#locGw)" />
+                  <circle cx="34" cy="29" r="11" fill="rgba(162,89,255,0.22)" class="gw-ring" />
+                  <circle cx="34" cy="29" r="5" fill="#a259ff" />
+                  <text x="58" y="26" fill="#ffffff" font-size="13.5" font-weight="600" font-family="-apple-system, sans-serif">Unified Local Gateway</text>
+                  <text x="58" y="43" fill="#a1a1aa" font-size="11" font-family="ui-monospace, monospace">http://localhost:8000/v1 · OpenAI Compatible</text>
+                  <rect x="314" y="18" width="58" height="22" rx="11" fill="rgba(10,207,131,0.16)" stroke="rgba(10,207,131,0.45)" />
+                  <text x="343" y="33" text-anchor="middle" fill="#34d399" font-size="11" font-weight="600" font-family="ui-monospace, monospace">ONLINE</text>
+                </g>
+
+                <!-- Bottom Client Outputs -->
+                <g transform="translate(118, 278)" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#424245">
+                  <rect x="0" y="0" width="96" height="26" rx="13" fill="#fff" stroke="#e5e5ea" />
+                  <text x="48" y="17" text-anchor="middle">IDE / Cursor</text>
+                  <rect x="114" y="0" width="96" height="26" rx="13" fill="#fff" stroke="#e5e5ea" />
+                  <text x="162" y="17" text-anchor="middle">Web Chat</text>
+                  <rect x="228" y="0" width="96" height="26" rx="13" fill="#fff" stroke="#e5e5ea" />
+                  <text x="276" y="17" text-anchor="middle">AI Agents</text>
+                </g>
+              </svg>
             </div>
           </article>
         </div>
@@ -243,7 +495,7 @@
 
         <div class="dir">
           <div class="dir-group reveal" id="cat-create">
-            <h3 class="dir-h"><span class="cn-ic ic-purple">✦</span><span data-i18n="cat.create">创作与沟通</span></h3>
+            <h3 class="dir-h"><span class="cn-ic ic-purple" aria-hidden="true"><svg><use href="#ic-create" /></svg></span><span data-i18n="cat.create">创作与沟通</span></h3>
             <div class="dir-list">
               <a class="dir-item" href="https://zaokit.app" target="_blank" rel="noopener">
                 <b data-i18n="studio.name">Zaokit 创作平台</b><span data-i18n="studio.short">把文章或链接变成封面、图文、漫画和演示。</span>
@@ -255,13 +507,13 @@
           </div>
 
           <div class="dir-group reveal" id="cat-access">
-            <h3 class="dir-h"><span class="cn-ic ic-orange">◆</span><span data-i18n="cat.access">模型接入与管理</span></h3>
+            <h3 class="dir-h"><span class="cn-ic ic-orange" aria-hidden="true"><svg><use href="#ic-access" /></svg></span><span data-i18n="cat.access">模型接入与管理</span></h3>
             <div class="dir-list">
-              <a class="dir-item" href="https://cc.zaokit.com" target="_blank" rel="noopener">
+              <a class="dir-item" href="https://api.zaokit.com" target="_blank" rel="noopener">
                 <b data-i18n="cc.name">Zaokit Claude API 服务</b><span data-i18n="cc.short">兼容 Anthropic 官方 API 格式，支持企业合同和正式发票。</span>
               </a>
               <a class="dir-item" href="https://cx.zaokit.com" target="_blank" rel="noopener">
-                <b data-i18n="cx.name">Zaokit Codex API 服务</b><span data-i18n="cx.short">OpenAI 与 Codex 接入，支持增值税专用发票。</span>
+                <b data-i18n="cx.name">Zaokit Codex API 服务</b><span data-i18n="cx.short">OpenAI 与 Codex 接入，专线优化，支持对公结算。</span>
               </a>
               <a class="dir-item" href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener">
                 <b>AI Token Hub</b><span data-i18n="hub.short">多模型统一接入，按部门计量和分配用量。</span>
@@ -270,19 +522,19 @@
           </div>
 
           <div class="dir-group reveal" id="cat-host">
-            <h3 class="dir-h"><span class="cn-ic ic-blue">▣</span><span data-i18n="cat.host">托管与部署</span></h3>
+            <h3 class="dir-h"><span class="cn-ic ic-blue" aria-hidden="true"><svg><use href="#ic-host" /></svg></span><span data-i18n="cat.host">托管与部署</span></h3>
             <div class="dir-list">
-              <a class="dir-item" href="https://junxinzhang.com/projects/claude-ops/" target="_blank" rel="noopener">
-                <b data-i18n="ops.name">Zaokit 工作环境托管</b><span data-i18n="ops.short">托管你的 Claude 工作环境：隔离的 Mac 环境，配一对一工程顾问。</span>
+              <a class="dir-item" href="https://claudeops.zaokit.ai" target="_blank" rel="noopener">
+                <b data-i18n="ops.name">Zaokit ClaudeOps 托管</b><span data-i18n="ops.short">托管你的 Claude 工作环境：隔离的 Mac 环境，配一对一工程顾问。</span>
               </a>
-              <a class="dir-item" href="https://junxinzhang.com/projects/zaokit-local/" target="_blank" rel="noopener">
-                <b>Zaokit Local</b><span data-i18n="local.short">开源大模型私有化部署与性能调优。</span>
+              <a class="dir-item" href="https://local.zaokit.ai" target="_blank" rel="noopener">
+                <b data-i18n="local.name">私有化算力部署和调优</b><span data-i18n="local.short">开源大模型私有化部署与性能调优。</span>
               </a>
             </div>
           </div>
 
           <div class="dir-group reveal" id="cat-ent">
-            <h3 class="dir-h"><span class="cn-ic ic-green">◎</span><span data-i18n="cat.ent">企业方案</span></h3>
+            <h3 class="dir-h"><span class="cn-ic ic-green" aria-hidden="true"><svg><use href="#ic-ent" /></svg></span><span data-i18n="cat.ent">企业方案</span></h3>
             <div class="dir-list">
               <a class="dir-item" href="https://aisecguard.junxinzhang.com" target="_blank" rel="noopener">
                 <b>AI Security Guard</b><span data-i18n="sec.short">为企业 AI 应用提供安全防护。</span>
@@ -294,7 +546,7 @@
                 <b>FortiGate SD-WAN Monitor</b><span data-i18n="sdwan.short">SD-WAN 链路健康监控、告警与趋势分析。</span>
               </a>
               <a class="dir-item" href="https://cmdb.junxinzhang.com" target="_blank" rel="noopener">
-                <b data-i18n="cmdb.name">蓝鲸 CMDB 定制方案</b><span data-i18n="cmdb.short">为蓝鲸 CMDB 提供精细化的权限与用户管理。</span>
+                <b data-i18n="cmdb.name">CMDB 定制方案</b><span data-i18n="cmdb.short">为企业 CMDB 提供精细化的权限与用户管理。</span>
               </a>
               <a class="dir-item" href="https://meterinfoapp.junxinzhang.com" target="_blank" rel="noopener">
                 <b data-i18n="meter.name">Meterinfo 电表轮换管理系统</b><span data-i18n="meter.short">管理电表从登记、轮换到更换的全过程。</span>
@@ -303,7 +555,7 @@
           </div>
 
           <div class="dir-group reveal" id="cat-more">
-            <h3 class="dir-h"><span class="cn-ic ic-pink">❖</span><span data-i18n="cat.more">更多服务</span></h3>
+            <h3 class="dir-h"><span class="cn-ic ic-pink" aria-hidden="true"><svg><use href="#ic-more" /></svg></span><span data-i18n="cat.more">更多服务</span></h3>
             <div class="dir-list">
               <a class="dir-item" href="https://gift.junxinzhang.com" target="_blank" rel="noopener">
                 <b data-i18n="gift.name">Apple 礼品卡充值服务</b><span data-i18n="gift.short">支持美区、日区、港区等多个地区。</span>
@@ -323,22 +575,22 @@
         </header>
         <div class="why-grid">
           <div class="why reveal">
-            <span class="why-ic ic-purple" aria-hidden="true">✦</span>
+            <span class="why-ic ic-purple" aria-hidden="true"><svg><use href="#ic-create" /></svg></span>
             <h3 data-i18n="why.c1.t">AI 原生</h3>
             <p data-i18n="why.c1.d">我们的 AI 产品围绕大模型能力设计，而不是在旧流程上加一个按钮。</p>
           </div>
           <div class="why reveal">
-            <span class="why-ic ic-blue" aria-hidden="true">◎</span>
+            <span class="why-ic ic-blue" aria-hidden="true"><svg><use href="#ic-reliable" /></svg></span>
             <h3 data-i18n="why.c2.t">稳定可靠</h3>
             <p data-i18n="why.c2.d">API 服务采用多线路路由与自动故障转移，为生产环境而设计。</p>
           </div>
           <div class="why reveal">
-            <span class="why-ic ic-orange" aria-hidden="true">¥</span>
+            <span class="why-ic ic-orange" aria-hidden="true"><svg><use href="#ic-invoice" /></svg></span>
             <h3 data-i18n="why.c3.t">对公可开票</h3>
             <p data-i18n="why.c3.d">API 服务与 Token Hub 支持企业合同、对公结算和发票，报销与入账都走得通。</p>
           </div>
           <div class="why reveal">
-            <span class="why-ic ic-green" aria-hidden="true">⌂</span>
+            <span class="why-ic ic-green" aria-hidden="true"><svg><use href="#ic-privacy" /></svg></span>
             <h3 data-i18n="why.c4.t">数据自主</h3>
             <p data-i18n="why.c4.d">需要时可私有化部署，模型和数据都留在你自己的环境里。</p>
           </div>
@@ -348,13 +600,30 @@
 
     <!-- ===== About ===== -->
     <section class="section about" id="about">
-      <div class="wrap about-inner">
-        <p class="eyebrow reveal" data-i18n="about.kicker">关于 Zaokit</p>
-        <p class="statement reveal">
-          <span data-i18n="about.s1">Zaokit，取“造 Kit”之意：</span>
-          <span class="grad" data-i18n="about.s2">为 AI 时代造好用的工具。</span>
-        </p>
-        <p class="about-p reveal" data-i18n="about.p">我们相信，AI 的价值不在演示，而在每天稳定地交付结果。所以我们把复杂的模型能力，做成个人和团队拿来就能用的产品。</p>
+      <div class="wrap">
+        <div class="about-card reveal">
+          <div class="about-glow" aria-hidden="true"></div>
+          <span class="about-badge" data-i18n="about.kicker">关于 Zaokit</span>
+          <h2 class="statement">
+            <span class="st-lead" data-i18n="about.s1">Zaokit，取“造 Kit”之意</span>
+            <span class="st-main" data-i18n="about.s2">为 AI 时代造好用的工具。</span>
+          </h2>
+          <p class="about-p" data-i18n="about.p">我们相信，AI 的价值不在演示，而在每天稳定地交付结果。所以我们把复杂的模型能力，做成个人和团队拿来就能用的产品。</p>
+          <div class="about-pillars">
+            <div class="ap-item">
+              <strong data-i18n="about.m1t">结果交付</strong>
+              <span data-i18n="about.m1d">从演示走向每天可用的生产力</span>
+            </div>
+            <div class="ap-item">
+              <strong data-i18n="about.m2t">工程级稳定</strong>
+              <span data-i18n="about.m2d">围绕真实生产环境打磨体验</span>
+            </div>
+            <div class="ap-item">
+              <strong data-i18n="about.m3t">开箱即用</strong>
+              <span data-i18n="about.m3d">个人创作者与企业团队皆适用</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -381,14 +650,14 @@
           <a href="https://zaokit.app" target="_blank" rel="noopener" data-i18n="studio.name">Zaokit 创作平台</a>
           <a href="https://vrt.junxinzhang.com" target="_blank" rel="noopener">Voice Real-time Translation</a>
           <h4 class="footer-h2" data-i18n="cat.access">模型接入与管理</h4>
-          <a href="https://cc.zaokit.com" target="_blank" rel="noopener" data-i18n="cc.name">Zaokit Claude API 服务</a>
+          <a href="https://api.zaokit.com" target="_blank" rel="noopener" data-i18n="cc.name">Zaokit Claude API 服务</a>
           <a href="https://cx.zaokit.com" target="_blank" rel="noopener" data-i18n="cx.name">Zaokit Codex API 服务</a>
           <a href="https://tokenhub.zaokit.ai" target="_blank" rel="noopener">AI Token Hub</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="cat.host">托管与部署</h4>
-          <a href="https://junxinzhang.com/projects/claude-ops/" target="_blank" rel="noopener" data-i18n="ops.name">Zaokit 工作环境托管</a>
-          <a href="https://junxinzhang.com/projects/zaokit-local/" target="_blank" rel="noopener">Zaokit Local</a>
+          <a href="https://claudeops.zaokit.ai" target="_blank" rel="noopener" data-i18n="ops.name">Zaokit ClaudeOps 托管</a>
+          <a href="https://local.zaokit.ai" target="_blank" rel="noopener" data-i18n="local.name">私有化算力部署和调优</a>
           <h4 class="footer-h2" data-i18n="cat.more">更多服务</h4>
           <a href="https://gift.junxinzhang.com" target="_blank" rel="noopener" data-i18n="gift.name">Apple 礼品卡充值服务</a>
         </div>
@@ -397,7 +666,7 @@
           <a href="https://aisecguard.junxinzhang.com" target="_blank" rel="noopener">AI Security Guard</a>
           <a href="https://devops-dash.junxinzhang.com" target="_blank" rel="noopener">DevOps Dashboard</a>
           <a href="https://network-monitor.junxinzhang.com" target="_blank" rel="noopener">FortiGate SD-WAN Monitor</a>
-          <a href="https://cmdb.junxinzhang.com" target="_blank" rel="noopener" data-i18n="cmdb.name">蓝鲸 CMDB 定制方案</a>
+          <a href="https://cmdb.junxinzhang.com" target="_blank" rel="noopener" data-i18n="cmdb.name">CMDB 定制方案</a>
           <a href="https://meterinfoapp.junxinzhang.com" target="_blank" rel="noopener" data-i18n="meter.name">Meterinfo 电表轮换管理系统</a>
         </div>
         <div class="footer-col">
@@ -420,8 +689,8 @@
     </div>
   </footer>
 
-  <script src="./js/i18n.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/i18n.js?v=20261126b"></script>
+  <script src="./js/main.js?v=20261126"></script>
 </body>
 
 </html>
