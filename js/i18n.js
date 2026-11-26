@@ -4,104 +4,173 @@
 
   var DICT = {
     zh: {
+      "meta.title": "Zaokit — 让 AI 真正开始干活",
+      "meta.desc": "Zaokit 提供 AI 内容创作、Claude 与 OpenAI API 接入、企业 AI 用量管理、Claude 工作环境托管和大模型私有化部署，以及面向企业的安全、运维与网络解决方案。",
+      "meta.og": "从内容创作到企业落地，稳定、开箱即用的 AI 产品与解决方案。",
       "skip": "跳到正文",
-      "nav.products": "产品", "nav.capabilities": "能力", "nav.about": "关于", "nav.contact": "联系",
+      "nav.featured": "精选", "nav.all": "全部产品", "nav.why": "优势", "nav.about": "关于", "nav.contact": "联系",
 
-      "hero.eyebrow": "AI 原生 · 内容与算力基础设施",
-      "hero.title1": "把一个想法", "hero.title2": "变成生产力",
-      "hero.sub": "Zaokit 构建从内容创作到算力供给的完整产品矩阵——让创意一句话成形，让企业把 AI 算力当水电一样调度，让合规接入大模型不再有门槛。",
-      "hero.cta1": "探索产品矩阵", "hero.cta2": "联系我们 →",
-      "hero.stat1n": "4", "hero.stat1l": "条产品线",
-      "hero.stat2n": "企业级", "hero.stat2l": "高可用 · 可开票",
-      "hero.stat3n": "私有化", "hero.stat3l": "可独立部署",
+      "hero.title": "让 AI 真正开始干活。",
+      "hero.sub": "从内容创作到企业落地，Zaokit 提供稳定、开箱即用的 AI 产品与解决方案。",
+      "hero.cta1": "了解产品", "hero.cta2": "联系我们",
 
-      "products.kicker": "产品矩阵", "products.title": "一个公司，四个支点",
-      "products.desc": "从面向创作者的内容工厂，到面向企业的算力中枢与合规接入，覆盖 AI 落地的关键环节。",
-      "products.p1.tag": "内容创作", "products.p1.name": "Zaokit 创作平台",
-      "products.p1.desc": "一句话生成小红书图文、PPT 演示与漫画故事。AI 内容工厂，输入文字，输出视觉。", "products.p1.link": "zaokit.app",
-      "products.p2.tag": "企业算力", "products.p2.name": "AI Token Hub",
-      "products.p2.desc": "企业 AI 算力的总闸与电表。把算力当水电一样统一计量、统一分配，号池优先、API 兜底。", "products.p2.link": "tokenhub.zaokit.ai",
-      "products.p3.tag": "合规接入", "products.p3.name": "Claude API 服务",
-      "products.p3.desc": "正规商业渠道接入 Claude，企业级高并发高可用，支持对公结算与增值税专票。", "products.p3.link": "cc.zaokit.com",
-      "products.p4.tag": "合规接入", "products.p4.name": "Codex API 服务",
-      "products.p4.desc": "正规商业渠道接入 OpenAI，含网络加速与合规结算，让企业稳定调用前沿模型。", "products.p4.link": "cx.zaokit.com",
+      "cat.create": "创作与沟通", "cat.access": "模型接入与管理", "cat.host": "托管与部署", "cat.ent": "企业方案", "cat.more": "更多服务",
 
-      "cap.kicker": "为什么选择 Zaokit", "cap.title": "把前沿能力，变成可交付的确定性",
-      "cap.c1.t": "AI 原生", "cap.c1.d": "从产品到工程链路都以大模型为核心构建，而非简单套壳。Agent 驱动的生成引擎贯穿每条产品线。",
-      "cap.c2.t": "企业级可靠", "cap.c2.d": "高并发、高可用架构，多 Key 轮询与自动容灾，蓝绿部署。为生产环境而生。",
-      "cap.c3.t": "合规与开票", "cap.c3.d": "正规商业渠道，支持对公结算与增值税专票，彻底解决企业接入与报销的合规痛点。",
-      "cap.c4.t": "私有化部署", "cap.c4.d": "关键能力支持私有化与独立部署，数据自主可控，满足企业安全与合规要求。",
+      "canvas.prompt": "“把这篇新品介绍做成小红书图文，配三张图。”", "canvas.c1": "你",
 
-      "about.kicker": "关于 Zaokit", "about.title": "造Kit —— 为 AI 时代造工具",
-      "about.p1": "Zaokit 相信，AI 的价值不在于演示，而在于稳定地交付结果。我们把复杂的模型能力收敛成可靠、好用、合规的产品，让个人创作者与企业团队都能即取即用。",
-      "about.p2": "从一张图、一份演示，到一整套企业算力调度与合规接入——我们在内容与算力两端同时发力，做 AI 落地的基础设施。",
-      "about.quote": "“输入文字，输出生产力。”", "about.quoteby": "— Zaokit 的产品信条",
+      "featured.title": "精选产品。", "featured.sub": "从内容创作，到企业级模型接入与部署。",
+      "common.learn": "了解更多",
 
-      "contact.title": "让我们聊聊你的 AI 需求",
-      "contact.desc": "无论是内容创作、企业算力调度，还是合规接入大模型，我们都能提供专业方案。",
-      "contact.btn": "support@zaokit.com", "contact.btn2": "体验创作平台 →",
+      "studio.name": "Zaokit 创作平台",
+      "studio.title": "把文字变成好看的视觉内容。",
+      "studio.desc": "粘贴一篇文章或一个链接，生成封面、小红书图文、插画、漫画和演示文稿。",
+      "studio.cta": "开始创作", "studio.more": "查看更新",
+      "studio.short": "把文章或链接变成封面、图文、漫画和演示。",
 
-      "footer.tag": "AI 内容与算力基础设施",
-      "footer.products": "产品", "footer.company": "公司",
-      "footer.about": "关于我们", "footer.cap": "核心能力", "footer.contact": "联系我们",
-      "footer.changelog": "更新日志", "footer.privacy": "隐私政策", "footer.terms": "使用条款",
-      "footer.social": "社交媒体", "footer.discord": "Discord", "footer.twitter": "X (Twitter)", "footer.youtube": "YouTube",
-      "footer.rights": "保留所有权利。"
+      "cc.name": "Zaokit Claude API 服务",
+      "cc.title": "稳定接入 Claude API。",
+      "cc.desc": "兼容 Anthropic 官方 API 格式，多线路路由与自动故障转移，支持企业合同和正式发票。",
+      "cc.short": "兼容 Anthropic 官方 API 格式，支持企业合同和正式发票。",
+
+      "cx.name": "Zaokit Codex API 服务",
+      "cx.title": "稳定接入 OpenAI 模型，可开专票。",
+      "cx.desc": "支持 OpenAI 与 Codex API 接入，兼容官方接口协议，专线优化，支持对公结算和增值税专用发票。",
+      "cx.short": "OpenAI 与 Codex 接入，支持增值税专用发票。",
+
+      "hub.title": "全公司的 AI 用量，一处管好。",
+      "hub.desc": "多家模型统一接入，按部门和模型计量、分配额度，一张账单看清所有用量。",
+      "hub.m1": "设计部", "hub.m2": "研发部", "hub.m3": "市场部",
+      "hub.short": "多模型统一接入，按部门计量和分配用量。",
+
+      "ops.name": "Zaokit 工作环境托管",
+      "ops.title": "你的 Claude 工作环境，交给我们托管。",
+      "ops.desc": "在 9 个国家的本地网络中提供隔离的 Mac Studio / Mac mini 环境，并配有一对一工程顾问。",
+      "ops.short": "托管你的 Claude 工作环境：隔离的 Mac 环境，配一对一工程顾问。",
+
+      "local.title": "大模型，跑在你自己的机器上。",
+      "local.desc": "我们把开源大模型部署到你的 Mac、Windows 或 Linux 设备上，提供多机统一网关和 OpenAI 兼容 API，一次性交付。",
+      "local.cta": "查看部署方案",
+      "local.short": "开源大模型私有化部署与性能调优。",
+
+      "all.title": "全部产品与方案。", "all.sub": "按你要解决的问题来找。",
+      "vrt.short": "macOS 实时语音转写与翻译，适合跨语言会议。",
+      "sec.short": "为企业 AI 应用提供安全防护。",
+      "devops.short": "在一个页面查看研发交付与运维状态。",
+      "sdwan.short": "SD-WAN 链路健康监控、告警与趋势分析。",
+      "cmdb.name": "蓝鲸 CMDB 定制方案", "cmdb.short": "为蓝鲸 CMDB 提供精细化的权限与用户管理。",
+      "meter.name": "Meterinfo 电表轮换管理系统", "meter.short": "管理电表从登记、轮换到更换的全过程。",
+      "gift.name": "Apple 礼品卡充值服务", "gift.short": "支持美区、日区、港区等多个地区。",
+
+      "why.title": "好用，还要放心用。", "why.sub": "为什么团队选择 Zaokit。",
+      "why.c1.t": "AI 原生", "why.c1.d": "我们的 AI 产品围绕大模型能力设计，而不是在旧流程上加一个按钮。",
+      "why.c2.t": "稳定可靠", "why.c2.d": "API 服务采用多线路路由与自动故障转移，为生产环境而设计。",
+      "why.c3.t": "对公可开票", "why.c3.d": "API 服务与 Token Hub 支持企业合同、对公结算和发票，报销与入账都走得通。",
+      "why.c4.t": "数据自主", "why.c4.d": "需要时可私有化部署，模型和数据都留在你自己的环境里。",
+
+      "about.kicker": "关于 Zaokit",
+      "about.s1": "Zaokit，取“造 Kit”之意：", "about.s2": "为 AI 时代造好用的工具。",
+      "about.p": "我们相信，AI 的价值不在演示，而在每天稳定地交付结果。所以我们把复杂的模型能力，做成个人和团队拿来就能用的产品。",
+
+      "contact.title": "聊聊你的需求。",
+      "contact.desc": "无论是内容创作、模型接入、私有化部署还是企业定制，都欢迎告诉我们你想解决的问题。",
+      "contact.btn": "发送邮件", "contact.btn2": "先试试创作平台",
+
+      "footer.company": "公司", "footer.about": "关于我们", "footer.changelog": "更新日志",
+      "footer.privacy": "隐私政策", "footer.terms": "使用条款", "footer.contact": "联系我们",
+      "footer.social": "关注我们", "footer.rights": "保留所有权利。",
+      "footer.note": "Claude 是 Anthropic 的商标；OpenAI 和 Codex 是 OpenAI 的商标；Apple、Mac、Mac Studio、Mac mini 和 macOS 是 Apple Inc. 的商标；其他商标归各自所有者所有。Zaokit 与上述公司无隶属关系。"
     },
     en: {
+      "meta.title": "Zaokit — AI that actually gets work done",
+      "meta.desc": "Zaokit offers AI content creation tools, Claude and OpenAI API access, enterprise AI usage management, managed Claude workspaces and private LLM deployment, plus security, operations and network solutions for enterprises.",
+      "meta.og": "Reliable, out-of-the-box AI products and solutions, from content creation to enterprise rollout.",
       "skip": "Skip to content",
-      "nav.products": "Products", "nav.capabilities": "Capabilities", "nav.about": "About", "nav.contact": "Contact",
+      "nav.featured": "Featured", "nav.all": "All products", "nav.why": "Why Zaokit", "nav.about": "About", "nav.contact": "Contact",
 
-      "hero.eyebrow": "AI-native · Content & Compute Infrastructure",
-      "hero.title1": "Turn an idea", "hero.title2": "into output",
-      "hero.sub": "Zaokit builds a full product matrix spanning content creation to compute supply — shaping ideas in one sentence, letting teams meter AI compute like a utility, and removing the barriers to compliant access to frontier models.",
-      "hero.cta1": "Explore products", "hero.cta2": "Get in touch →",
-      "hero.stat1n": "4", "hero.stat1l": "product lines",
-      "hero.stat2n": "Enterprise", "hero.stat2l": "HA · invoiceable",
-      "hero.stat3n": "Self-host", "hero.stat3l": "deploy your own",
+      "hero.title": "AI that actually gets work done.",
+      "hero.sub": "From content creation to enterprise rollout, Zaokit builds reliable AI products and solutions that work out of the box.",
+      "hero.cta1": "Explore products", "hero.cta2": "Contact us",
 
-      "products.kicker": "Product Matrix", "products.title": "One company, four pillars",
-      "products.desc": "From a content factory for creators to a compute hub and compliant model access for enterprises — covering the key links of putting AI to work.",
-      "products.p1.tag": "Content", "products.p1.name": "Zaokit Studio",
-      "products.p1.desc": "Generate social posts, slide decks and comics from one sentence. An AI content factory: text in, visuals out.", "products.p1.link": "zaokit.app",
-      "products.p2.tag": "Compute", "products.p2.name": "AI Token Hub",
-      "products.p2.desc": "The master switch and meter for enterprise AI compute. Meter and allocate it like a utility — account pool first, API as fallback.", "products.p2.link": "tokenhub.zaokit.ai",
-      "products.p3.tag": "Access", "products.p3.name": "Claude API Service",
-      "products.p3.desc": "Compliant commercial access to Claude with enterprise-grade concurrency and uptime, corporate billing and VAT invoices.", "products.p3.link": "cc.zaokit.com",
-      "products.p4.tag": "Access", "products.p4.name": "Codex API Service",
-      "products.p4.desc": "Compliant commercial access to OpenAI with network acceleration and proper billing — stable calls to frontier models.", "products.p4.link": "cx.zaokit.com",
+      "cat.create": "Create & communicate", "cat.access": "Model access & management", "cat.host": "Hosting & deployment", "cat.ent": "Enterprise solutions", "cat.more": "More services",
 
-      "cap.kicker": "Why Zaokit", "cap.title": "Turning frontier capability into deliverable certainty",
-      "cap.c1.t": "AI-native", "cap.c1.d": "Built around large models from product to engineering — not a thin wrapper. Agent-driven generation runs through every line.",
-      "cap.c2.t": "Enterprise-grade", "cap.c2.d": "High-concurrency, high-availability architecture with multi-key rotation, automatic failover and blue-green deploys.",
-      "cap.c3.t": "Compliant & invoiced", "cap.c3.d": "Legitimate commercial channels with corporate billing and VAT invoices — solving access and reimbursement pain points.",
-      "cap.c4.t": "Self-hosted", "cap.c4.d": "Core capabilities support private, standalone deployment — your data stays under your control, meeting security needs.",
+      "canvas.prompt": "“Turn this product launch article into a social post with three images.”", "canvas.c1": "You",
 
-      "about.kicker": "About Zaokit", "about.title": "Zaokit — building tools for the AI era",
-      "about.p1": "We believe the value of AI lies not in demos but in reliably delivering results. We distill complex model capability into dependable, usable, compliant products that creators and enterprise teams can pick up instantly.",
-      "about.p2": "From a single image or deck to a full enterprise compute-orchestration and compliant-access stack — we work both ends, content and compute, as the infrastructure for putting AI to work.",
-      "about.quote": "“Text in, productivity out.”", "about.quoteby": "— The Zaokit product creed",
+      "featured.title": "Featured products.", "featured.sub": "From content creation to enterprise model access and deployment.",
+      "common.learn": "Learn more",
 
-      "contact.title": "Let's talk about your AI needs",
-      "contact.desc": "Whether it's content creation, enterprise compute orchestration, or compliant access to large models — we have a solution.",
-      "contact.btn": "support@zaokit.com", "contact.btn2": "Try the studio →",
+      "studio.name": "Zaokit Studio",
+      "studio.title": "Turn words into visuals.",
+      "studio.desc": "Paste an article or a link to get covers, social image packs, illustrations, comics and slides.",
+      "studio.cta": "Start creating", "studio.more": "See what’s new",
+      "studio.short": "Turn articles or links into covers, image packs, comics and slides.",
 
-      "footer.tag": "AI content & compute infrastructure",
-      "footer.products": "Products", "footer.company": "Company",
-      "footer.about": "About us", "footer.cap": "Capabilities", "footer.contact": "Contact",
-      "footer.changelog": "Changelog", "footer.privacy": "Privacy Policy", "footer.terms": "Terms of Service",
-      "footer.social": "Social", "footer.discord": "Discord", "footer.twitter": "X (Twitter)", "footer.youtube": "YouTube",
-      "footer.rights": "All rights reserved."
+      "cc.name": "Zaokit Claude API Service",
+      "cc.title": "Reliable access to the Claude API.",
+      "cc.desc": "Compatible with the Anthropic API format, with multi-path routing, automatic failover, enterprise contracts and formal invoices.",
+      "cc.short": "Anthropic API compatible, with enterprise contracts and formal invoices.",
+
+      "cx.name": "Zaokit Codex API Service",
+      "cx.title": "Reliable access to OpenAI models. VAT special invoices.",
+      "cx.desc": "Access to the OpenAI and Codex APIs, compatible with the official protocol, with optimized routing, corporate billing and VAT special invoices.",
+      "cx.short": "OpenAI and Codex access, with VAT special invoices.",
+
+      "hub.title": "All your company’s AI usage, in one place.",
+      "hub.desc": "Connect multiple model providers, meter and allocate quotas by department and model, and see all usage on a single bill.",
+      "hub.m1": "Design", "hub.m2": "Engineering", "hub.m3": "Marketing",
+      "hub.short": "Multiple models in one hub, with usage metered by department.",
+
+      "ops.name": "Zaokit Managed Workspace",
+      "ops.title": "Your Claude workspace, managed for you.",
+      "ops.desc": "Isolated Mac Studio and Mac mini environments on local networks in 9 countries, with a one-on-one engineering consultant.",
+      "ops.short": "Managed Claude workspaces on isolated Macs, with a one-on-one engineering consultant.",
+
+      "local.title": "Large models, running on your own machines.",
+      "local.desc": "We deploy open-source models on your Mac, Windows or Linux hardware, with a unified multi-node gateway and an OpenAI-compatible API — delivered as a one-time project.",
+      "local.cta": "See deployment plans",
+      "local.short": "Private deployment and tuning of open-source LLMs.",
+
+      "all.title": "All products and solutions.", "all.sub": "Find them by the problem you need to solve.",
+      "vrt.short": "Real-time speech transcription and translation on macOS, made for cross-language meetings.",
+      "sec.short": "Protection for enterprise AI applications.",
+      "devops.short": "Delivery and operations status on a single page.",
+      "sdwan.short": "SD-WAN link health monitoring, alerts and trends.",
+      "cmdb.name": "BlueKing CMDB Custom Solution", "cmdb.short": "Fine-grained permissions and user management for BlueKing CMDB.",
+      "meter.name": "Meterinfo Meter Rotation Management", "meter.short": "Every step of a meter’s life, from registration and rotation to replacement.",
+      "gift.name": "Apple Gift Card Top-up Service", "gift.short": "Available for US, Japan, Hong Kong and other regions.",
+
+      "why.title": "Easy to use. Safe to rely on.", "why.sub": "Why teams choose Zaokit.",
+      "why.c1.t": "AI-native", "why.c1.d": "Our AI products are built around what large models do well, not bolted onto old workflows.",
+      "why.c2.t": "Reliable", "why.c2.d": "Our API services use multi-path routing and automatic failover, built for production.",
+      "why.c3.t": "Business invoicing", "why.c3.d": "Our API services and Token Hub support enterprise contracts, corporate billing and invoices, so finance can sign off.",
+      "why.c4.t": "Your data, your control", "why.c4.d": "Deploy privately when you need to, keeping models and data in your own environment.",
+
+      "about.kicker": "About Zaokit",
+      "about.s1": "Zaokit comes from 造 (zào, “to make”) + kit:", "about.s2": "building useful tools for the AI era.",
+      "about.p": "We believe AI proves its value not in demos, but in delivering results reliably, every day. So we turn complex model capabilities into products that individuals and teams can simply pick up and use.",
+
+      "contact.title": "Let’s talk.",
+      "contact.desc": "Content creation, model access, private deployment or a custom enterprise build — tell us the problem you want to solve.",
+      "contact.btn": "Email us", "contact.btn2": "Try Zaokit Studio first",
+
+      "footer.company": "Company", "footer.about": "About", "footer.changelog": "Changelog",
+      "footer.privacy": "Privacy policy", "footer.terms": "Terms of use", "footer.contact": "Contact",
+      "footer.social": "Follow us", "footer.rights": "All rights reserved.",
+      "footer.note": "Claude is a trademark of Anthropic. OpenAI and Codex are trademarks of OpenAI. Apple, Mac, Mac Studio, Mac mini and macOS are trademarks of Apple Inc. Other trademarks belong to their respective owners. Zaokit is not affiliated with these companies."
     }
   };
+
+  function setMeta(sel, val) {
+    var el = document.querySelector(sel);
+    if (el && val) el.setAttribute("content", val);
+  }
 
   var I18N = {
     lang: "zh",
     init: function () {
       var saved = null;
       try { saved = localStorage.getItem("zaokit_lang"); } catch (e) {}
-      var lang = saved || (navigator.language && navigator.language.toLowerCase().indexOf("zh") === 0 ? "zh" : (saved ? saved : "zh"));
-      this.apply(lang);
+      var nav = (navigator.language || "").toLowerCase();
+      this.apply(saved || (nav.indexOf("zh") === 0 ? "zh" : "en"));
       var btn = document.getElementById("lang-switch");
       if (btn) btn.addEventListener("click", function () { I18N.switchLang(); });
     },
@@ -114,11 +183,16 @@
         var key = el.getAttribute("data-i18n");
         if (dict[key] != null) el.textContent = dict[key];
       });
+      document.title = dict["meta.title"];
+      setMeta('meta[name="description"]', dict["meta.desc"]);
+      setMeta('meta[property="og:title"]', dict["meta.title"]);
+      setMeta('meta[property="og:description"]', dict["meta.og"]);
       var btn = document.getElementById("lang-switch");
       if (btn) btn.textContent = lang === "zh" ? "EN" : "中文";
       try { localStorage.setItem("zaokit_lang", lang); } catch (e) {}
     },
-    switchLang: function () { this.apply(this.lang === "zh" ? "en" : "zh"); }
+    switchLang: function () { this.apply(this.lang === "zh" ? "en" : "zh"); },
+    dict: DICT
   };
 
   window.I18N = I18N;
