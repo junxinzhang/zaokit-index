@@ -60,6 +60,10 @@
 
       "all.title": "全部产品与方案。", "all.sub": "按你要解决的问题来找。",
       "vrt.short": "macOS 实时语音转写与翻译，适合跨语言会议。",
+      "sso.short": "独立身份认证、企业微信接入、人员同步与统一应用授权。",
+      "oa.short": "面向企业的流程审批、协作办公与组织事务管理平台。",
+      "mdm.short": "企业主数据统一建模、治理、权限管控与批量分发。",
+      "ipaas.short": "跨系统 API 集成、数据抽取转换加载与自动化编排。",
       "sec.short": "为企业 AI 应用提供安全防护。",
       "devops.short": "在一个页面查看研发交付与运维状态。",
       "sdwan.short": "SD-WAN 链路健康监控、告警与趋势分析。",
@@ -146,6 +150,10 @@
 
       "all.title": "All products and solutions.", "all.sub": "Find them by the problem you need to solve.",
       "vrt.short": "Real-time speech transcription and translation on macOS, made for cross-language meetings.",
+      "sso.short": "Standalone identity authentication, WeCom integration, directory sync and app authorization.",
+      "oa.short": "Enterprise workflow approvals, office collaboration and organizational operations.",
+      "mdm.short": "Enterprise master data modeling, governance, access control and bulk distribution.",
+      "ipaas.short": "Cross-system API integration, ETL data pipelines and automated job orchestration.",
       "sec.short": "Protection for enterprise AI applications.",
       "devops.short": "Delivery and operations status on a single page.",
       "sdwan.short": "SD-WAN link health monitoring, alerts and trends.",
